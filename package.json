@@ -1,0 +1,45 @@
+{
+  "name": "gl-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "docs": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "buildDocs": "vue-cli-service build",
+    "buildComponents": "vue-cli-service build --target lib --name gl packages/index.js",
+    "deploy": "./deploy.sh",
+    "lint": "vue-cli-service lint",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "js-cookie": "^2.2.1",
+    "js-md5": "^0.7.3",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "markdown-it-anchor": "^5.2.4",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-table-of-contents": "^0.4.4",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "spritesmith": "^3.3.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
